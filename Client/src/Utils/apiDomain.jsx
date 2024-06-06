@@ -1,1 +1,1 @@
-export const apiDomain = "http://localhost:8085"
+export const apiDomain = "http://localhost:5000";

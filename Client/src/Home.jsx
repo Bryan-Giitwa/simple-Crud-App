@@ -18,14 +18,10 @@ const Home = () => {
   }, []);
 
   const handleDelete = (id) => {
-    axios.delete(`${apiDomain}/delete/${id}`);
     axios
       .delete(`${apiDomain}/delete/${id}`)
       .then(() => {
         location.reload();
-      })
-      .catch((error) => {
-        console.log(error);
       })
       .catch((error) => {
         console.log(error);
